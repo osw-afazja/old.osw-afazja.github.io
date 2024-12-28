@@ -40,8 +40,8 @@ const Layout = ({ pageTitle, children }: Props) => {
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/gallery" className={navLinkText}>
-              Gallery
+            <Link to="/galeria" className={navLinkText}>
+              Galeria
             </Link>
           </li>
         </ul>
