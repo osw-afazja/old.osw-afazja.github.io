@@ -17,6 +17,7 @@ const config: GatsbyConfig = {
         path: `${__dirname}/galleries`,
       }
     },
+    "gatsby-plugin-mdx",
   ],
 }
 
