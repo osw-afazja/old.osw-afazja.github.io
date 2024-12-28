@@ -1,7 +1,5 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
 import Layout from '../components/layout'
-import Seo from '../components/seo'
 
 function IndexPage() {
   return (    
@@ -13,4 +11,4 @@ function IndexPage() {
 
 export default IndexPage
 
-export const Head = () => <Seo title="Home Page" />
+export const Head = () => <title>Home Page</title>

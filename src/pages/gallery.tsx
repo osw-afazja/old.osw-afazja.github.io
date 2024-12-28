@@ -1,15 +1,34 @@
 import * as React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
-const GalleryPage = () => {
+const GalleryPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Galery Pages">
-      <p>My cool galleries will go in here</p>
+    <Layout pageTitle="My Blog Posts">
+      <ul>
+      {
+        data.allFile.nodes.map(node => (
+          <li key={node.name}>
+            {node.name}
+          </li>
+        ))
+      }
+      </ul>
     </Layout>
   )
 }
 
-export const Head = () => <Seo title="My Galery Pages" />
+export const query = graphql`
+  query {
+    allFile {
+      nodes {
+        name
+      }
+    }
+  }
+`
+
+export const Head = () => <Seo title="My Gallery" />
 
 export default GalleryPage

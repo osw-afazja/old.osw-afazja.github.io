@@ -8,7 +8,12 @@ import {
   navLinkText
 } from './layout.module.css'
 
-const Layout = ({ pageTitle, children }) => {
+interface Props {
+  pageTitle: string,
+  children?: JSX.Element
+}
+
+const Layout = ({ pageTitle, children }: Props) => {
   const data = useStaticQuery(graphql`
     query {
       site {
