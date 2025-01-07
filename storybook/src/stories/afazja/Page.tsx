@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from '../Header';
+import { Header } from '../Header'
 import { Footer } from './Footer';
 import './page.css';
 
@@ -19,7 +19,6 @@ export const Page: React.FC = () => {
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
-
       <section className="storybook-page">
         <h2>Pages in Storybook</h2>
         <p>
@@ -74,7 +73,7 @@ export const Page: React.FC = () => {
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'Jane Doe' })}
-      />      
+      />
     </article>
   );
 };

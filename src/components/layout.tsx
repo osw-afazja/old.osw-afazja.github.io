@@ -23,9 +23,9 @@ const Layout = ({ pageTitle, children }: Props) => {
       }
     }
   `)
-  
+
   return (
-    <div className={container}>
+    <div>
       <header>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={navLinks}>

@@ -1,0 +1,72 @@
+footer {
+  background-color: rgb(26, 26, 26);
+  padding-bottom: 50px;
+}
+
+.footer-title {
+  color: rgb(255, 180, 0);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Bitter, sans-serif;
+  line-height: 1.1;
+}
+
+footer p {
+  font-family: Bitter;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgb(255, 255, 255)
+}
+
+footer .quotation-widget {
+  padding: 55px 25px;
+}
+
+footer .quotation {
+  color: #428bca;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  font-family: Bitter;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.footer-container .box {
+  background-color: red;
+}
+
+.storybook-footer svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storybook-footer h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 6px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.storybook-footer button+button {
+  margin-left: 10px;
+}
+
+.storybook-footer .welcome {
+  margin-right: 10px;
+  color: #333;
+  font-size: 14px;
+}

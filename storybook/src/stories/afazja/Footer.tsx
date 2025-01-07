@@ -14,7 +14,7 @@ export interface FooterProps {
   onCreateAccount?: () => void;
 }
 
-export const Footer = ({ user, onLogin, onLogout, onCreateAccount }: FooterProps) => (
+export const Footer = (footerProps: FooterProps) => (
   <footer>
     <div className="footer-container">
       <div className="box">
@@ -23,7 +23,7 @@ export const Footer = ({ user, onLogin, onLogout, onCreateAccount }: FooterProps
         <p>ul. St. Millana 15, 30-610 Kraków Tel: 12 266-34-67 E-mail: sos-w@o2.pl</p>
       </div>
       <div className="box">
-        <p>Wirtualny spacer po ośrodku</p>    
+        <p className="text-3xl font-bold underline">Wirtualny spacer po ośrodku</p>    
       </div>
       <div className="box">
         <h3>Nasze strony</h3>
